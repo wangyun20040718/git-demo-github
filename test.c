@@ -2,6 +2,7 @@
 
 int main()
 {
-    printf("Hello C！我在vscode写代码，这是我的第一个C程序。\n");
+    int nsb = 10;
+    printf("%d", nsb);
     return 0;
 }

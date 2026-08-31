@@ -10,5 +10,5 @@ int main()
     printf("%d", nsa);
     printf("%d", nsb);
     printf("%d", nsc);
-    return 0;
+
 }

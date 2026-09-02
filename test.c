@@ -9,6 +9,6 @@ int main()
     nsc = nsa + nsb;
     printf("%d", nsa);
     printf("%d", nsb);
-    printf("%d", nsc);
+
 
 }

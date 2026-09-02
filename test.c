@@ -7,7 +7,7 @@ int main()
     int nsc = 0;
     int *p;
 
-    *p = &nsa;
+    p = &nsa;
     nsc = nsa + nsb;
 
     printf("%d", nsa);

@@ -10,8 +10,8 @@ int main()
     p = &nsa;
     nsc = nsa + nsb;
 
-    printf("%d", nsa);
-    printf("%d", nsb);
-    printf("%d", nsc);
-    printf("%d",*p);
+    printf("%d\n", nsa);
+    printf("%d\n", nsb);
+    printf("%d\n", nsc);
+    printf("%d\n",*p);
 }

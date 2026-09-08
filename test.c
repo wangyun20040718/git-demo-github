@@ -1,31 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include "test.h"
 
 #define VALID_INPUT 0    
 #define INVALID_INPUT 1
 
 int judgeWordValidInput = VALID_INPUT; 
 
-typedef enum state{
-	NO_DISC = 0,
-	STOP,
-	PLAY,
-	PAUSE,
-	FAST_FORWARD,
-	FAST_BACKWARD,
-	STATE_NULL     //6
-}state;
-
-typedef enum keyInput{
-	LOAD_INPUT = 0,
-	EJECT_INPUT,
-	PLAY_INPUT = 2,
-	PAUSE_INPUT = 2,
-	FAST_FORWARD_INPUT,
-	FAST_BACKWARD_INPUT,
-	STOP_INPUT,
-	STATE_QUIT_INPUT
-}keyInput;
 
 void func_null(void)
 {

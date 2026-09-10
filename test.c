@@ -55,14 +55,9 @@ void func_stop(void)
 
 void (*cdFuncArry[])() = {func_loading, func_ejecting, func_startplay, func_play, func_pause, func_ff, func_rew, func_stop, func_null};
 
-typedef struct stCdStateAndFunc{
-	void (*cdFunc)(void);
-	enum state cdState;
-}stCdStateAndFunc;
-
 const struct stCdStateAndFunc cdStateMoveTable[STATE_NULL][STATE_QUIT_INPUT] = {
-	/*LOAD_INPUT = 0*/           /*EJECT_INPUT = 1*/          /*PLAY_INPUT/PAUSE_INPUT = 2*/ /*FAST_FORWARD_INPUT = 3*/ /*FAST_BACKWARD_INPUT = 4*/ /*STOP_INPUT = 5*/
-	{{func_loading, STOP}, {func_null    , STATE_NULL}, {func_null     , STATE_NULL}, {func_null, STATE_NULL  }, {func_null,    STATE_NULL}, {func_null, STATE_NULL}}, /*NO_DISC*/
+	/*LOAD_INPUT = 0*/                 /*EJECT_INPUT = 1*/          /*PLAY_INPUT/PAUSE_INPUT = 2*/ /*FAST_FORWARD_INPUT = 3*/ /*FAST_BACKWARD_INPUT = 4*/ /*STOP_INPUT = 5*/
+	{{func_loading,           STOP}, {func_null    , STATE_NULL}, {func_null     , STATE_NULL}, {func_null, STATE_NULL  }, {func_null,    STATE_NULL}, {func_null, STATE_NULL}}, /*NO_DISC*/
 	{{func_null   ,     STATE_NULL}, {func_ejecting,    NO_DISC}, {func_startplay,       PLAY}, {func_null, STATE_NULL  }, {func_null,    STATE_NULL}, {func_null, STATE_NULL}}, /*STOP*/
 	{{func_null   ,     STATE_NULL}, {func_ejecting,    NO_DISC}, {func_pause    ,      PAUSE}, {func_ff  , FAST_FORWARD}, {func_rew , FAST_BACKWARD}, {func_stop,       STOP}}, /*PLAY*/
 	{{func_null   ,     STATE_NULL}, {func_ejecting,    NO_DISC}, {func_play     ,       PLAY}, {func_ff  , FAST_FORWARD}, {func_rew , FAST_BACKWARD}, {func_stop,       STOP}}, /*PAUSE*/
@@ -153,9 +148,3 @@ void cdStateMoveFunc()
 		printf("\n");
 	}
 } 
-
-int main()
-{
-	/*状态迁移函数调用*/
-    cdStateMoveFunc();	
-}

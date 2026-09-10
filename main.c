@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "test.h"
+
 
 int main()
 {
-    int a;
-    
-    a = 10;
+	/*状态迁移函数调用*/
+    cdStateMoveFunc();
 }

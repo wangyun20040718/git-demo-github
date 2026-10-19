@@ -7,5 +7,6 @@
 extern int arrayTow[][4];
 extern people_st people[];
 extern people_st *people_p[];
+extern int arrayOne[9];
 
 #endif

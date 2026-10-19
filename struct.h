@@ -15,5 +15,9 @@ typedef struct{
     uint8_t sex[10];
 }people_st;
 
-
+typedef struct List
+{
+    int num;
+    struct List *next_Node;
+}List;
 #endif

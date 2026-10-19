@@ -10,6 +10,8 @@ int arrayTow[][4] =
      {5, 6, 7, 8}, 
      {9, 10, 11, 12}};
 
+int arrayOne[9] = {9, 8, 6, 7, 4, 2, 1, 3, 5};
+
 people_st people[] = 
     {{"ZS", 18, "BOY"},
      {"LS", 20, "BOY"},

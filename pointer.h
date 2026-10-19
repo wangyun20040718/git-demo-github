@@ -4,5 +4,7 @@
 #include <string.h>
 
 int add(int* wsbnum1_p, int* wsbnum2_p);
-void arrayPrint(int (*array)[4]);
+void arrayPrintTowWei(int (*array)[4]);
+void arrayPrintYiWei(int *array, int num);
+
 #endif

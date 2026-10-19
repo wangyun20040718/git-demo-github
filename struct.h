@@ -20,4 +20,14 @@ typedef struct List
     int num;
     struct List *next_Node;
 }List;
+
+typedef struct{
+    int Value;
+}DataStruct_t;
+
+typedef struct _List{
+    DataStruct_t *pstData;
+    struct _List *nextPtr;
+}ListNode_t;
+
 #endif

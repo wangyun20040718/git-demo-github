@@ -51,3 +51,5 @@ void wstListPrint(List *head)
         Node_print = Node_print->next_Node;
     }
 }
+
+/*删除链表*/

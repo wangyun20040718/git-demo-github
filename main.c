@@ -16,7 +16,7 @@ int main()
 
     /*结构体打印*/
     //printf("结构体打印：\n");
-    printf("%s %d %s\n", people_p[0]->name, people_p[0]->age, people_p[0]->sex);
+    //printf("%s %d %s\n", people_p[0]->name, people_p[0]->age, people_p[0]->sex);
     //printf("%s %d %s\n", people[1].name, people[1].age, people[1].sex);
 
     /*冒泡排序*/
